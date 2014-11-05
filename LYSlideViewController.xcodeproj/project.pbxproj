@@ -1,0 +1,445 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BA3A30001A0A165E003E4A85 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3A2FFF1A0A165E003E4A85 /* main.m */; };
+		BA3A30031A0A165E003E4A85 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3A30021A0A165E003E4A85 /* AppDelegate.m */; };
+		BA3A30061A0A165E003E4A85 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3A30051A0A165E003E4A85 /* ViewController.m */; };
+		BA3A30091A0A165E003E4A85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA3A30071A0A165E003E4A85 /* Main.storyboard */; };
+		BA3A300B1A0A165E003E4A85 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA3A300A1A0A165E003E4A85 /* Images.xcassets */; };
+		BA3A300E1A0A165E003E4A85 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BA3A300C1A0A165E003E4A85 /* LaunchScreen.xib */; };
+		BA3A301A1A0A165E003E4A85 /* LYSlideViewControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3A30191A0A165E003E4A85 /* LYSlideViewControllerTests.m */; };
+		BA3A30251A0A181A003E4A85 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3A30241A0A181A003E4A85 /* MainViewController.m */; };
+		BA3A30281A0A182C003E4A85 /* LeftViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3A30271A0A182C003E4A85 /* LeftViewController.m */; };
+		BA3A302B1A0A183D003E4A85 /* RightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BA3A302A1A0A183D003E4A85 /* RightViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BA3A30141A0A165E003E4A85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BA3A2FF21A0A165E003E4A85 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BA3A2FF91A0A165E003E4A85;
+			remoteInfo = LYSlideViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BA3A2FFA1A0A165E003E4A85 /* LYSlideViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LYSlideViewController.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA3A2FFE1A0A165E003E4A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA3A2FFF1A0A165E003E4A85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BA3A30011A0A165E003E4A85 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BA3A30021A0A165E003E4A85 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BA3A30041A0A165E003E4A85 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		BA3A30051A0A165E003E4A85 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		BA3A30081A0A165E003E4A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BA3A300A1A0A165E003E4A85 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		BA3A300D1A0A165E003E4A85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		BA3A30131A0A165E003E4A85 /* LYSlideViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LYSlideViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA3A30181A0A165E003E4A85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA3A30191A0A165E003E4A85 /* LYSlideViewControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LYSlideViewControllerTests.m; sourceTree = "<group>"; };
+		BA3A30231A0A1819003E4A85 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		BA3A30241A0A181A003E4A85 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		BA3A30261A0A182C003E4A85 /* LeftViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeftViewController.h; sourceTree = "<group>"; };
+		BA3A30271A0A182C003E4A85 /* LeftViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeftViewController.m; sourceTree = "<group>"; };
+		BA3A30291A0A183D003E4A85 /* RightViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightViewController.h; sourceTree = "<group>"; };
+		BA3A302A1A0A183D003E4A85 /* RightViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BA3A2FF71A0A165E003E4A85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA3A30101A0A165E003E4A85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BA3A2FF11A0A165E003E4A85 = {
+			isa = PBXGroup;
+			children = (
+				BA3A2FFC1A0A165E003E4A85 /* LYSlideViewController */,
+				BA3A30161A0A165E003E4A85 /* LYSlideViewControllerTests */,
+				BA3A2FFB1A0A165E003E4A85 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BA3A2FFB1A0A165E003E4A85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BA3A2FFA1A0A165E003E4A85 /* LYSlideViewController.app */,
+				BA3A30131A0A165E003E4A85 /* LYSlideViewControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BA3A2FFC1A0A165E003E4A85 /* LYSlideViewController */ = {
+			isa = PBXGroup;
+			children = (
+				BA3A30011A0A165E003E4A85 /* AppDelegate.h */,
+				BA3A30021A0A165E003E4A85 /* AppDelegate.m */,
+				BA3A30041A0A165E003E4A85 /* ViewController.h */,
+				BA3A30051A0A165E003E4A85 /* ViewController.m */,
+				BA3A30231A0A1819003E4A85 /* MainViewController.h */,
+				BA3A30241A0A181A003E4A85 /* MainViewController.m */,
+				BA3A30261A0A182C003E4A85 /* LeftViewController.h */,
+				BA3A30271A0A182C003E4A85 /* LeftViewController.m */,
+				BA3A30291A0A183D003E4A85 /* RightViewController.h */,
+				BA3A302A1A0A183D003E4A85 /* RightViewController.m */,
+				BA3A30071A0A165E003E4A85 /* Main.storyboard */,
+				BA3A300A1A0A165E003E4A85 /* Images.xcassets */,
+				BA3A300C1A0A165E003E4A85 /* LaunchScreen.xib */,
+				BA3A2FFD1A0A165E003E4A85 /* Supporting Files */,
+			);
+			path = LYSlideViewController;
+			sourceTree = "<group>";
+		};
+		BA3A2FFD1A0A165E003E4A85 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA3A2FFE1A0A165E003E4A85 /* Info.plist */,
+				BA3A2FFF1A0A165E003E4A85 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BA3A30161A0A165E003E4A85 /* LYSlideViewControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				BA3A30191A0A165E003E4A85 /* LYSlideViewControllerTests.m */,
+				BA3A30171A0A165E003E4A85 /* Supporting Files */,
+			);
+			path = LYSlideViewControllerTests;
+			sourceTree = "<group>";
+		};
+		BA3A30171A0A165E003E4A85 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA3A30181A0A165E003E4A85 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BA3A2FF91A0A165E003E4A85 /* LYSlideViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA3A301D1A0A165E003E4A85 /* Build configuration list for PBXNativeTarget "LYSlideViewController" */;
+			buildPhases = (
+				BA3A2FF61A0A165E003E4A85 /* Sources */,
+				BA3A2FF71A0A165E003E4A85 /* Frameworks */,
+				BA3A2FF81A0A165E003E4A85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LYSlideViewController;
+			productName = LYSlideViewController;
+			productReference = BA3A2FFA1A0A165E003E4A85 /* LYSlideViewController.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BA3A30121A0A165E003E4A85 /* LYSlideViewControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BA3A30201A0A165E003E4A85 /* Build configuration list for PBXNativeTarget "LYSlideViewControllerTests" */;
+			buildPhases = (
+				BA3A300F1A0A165E003E4A85 /* Sources */,
+				BA3A30101A0A165E003E4A85 /* Frameworks */,
+				BA3A30111A0A165E003E4A85 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BA3A30151A0A165E003E4A85 /* PBXTargetDependency */,
+			);
+			name = LYSlideViewControllerTests;
+			productName = LYSlideViewControllerTests;
+			productReference = BA3A30131A0A165E003E4A85 /* LYSlideViewControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BA3A2FF21A0A165E003E4A85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "___李言___";
+				TargetAttributes = {
+					BA3A2FF91A0A165E003E4A85 = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					BA3A30121A0A165E003E4A85 = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = BA3A2FF91A0A165E003E4A85;
+					};
+				};
+			};
+			buildConfigurationList = BA3A2FF51A0A165E003E4A85 /* Build configuration list for PBXProject "LYSlideViewController" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BA3A2FF11A0A165E003E4A85;
+			productRefGroup = BA3A2FFB1A0A165E003E4A85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BA3A2FF91A0A165E003E4A85 /* LYSlideViewController */,
+				BA3A30121A0A165E003E4A85 /* LYSlideViewControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BA3A2FF81A0A165E003E4A85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA3A30091A0A165E003E4A85 /* Main.storyboard in Resources */,
+				BA3A300E1A0A165E003E4A85 /* LaunchScreen.xib in Resources */,
+				BA3A300B1A0A165E003E4A85 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA3A30111A0A165E003E4A85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BA3A2FF61A0A165E003E4A85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA3A30061A0A165E003E4A85 /* ViewController.m in Sources */,
+				BA3A30281A0A182C003E4A85 /* LeftViewController.m in Sources */,
+				BA3A30031A0A165E003E4A85 /* AppDelegate.m in Sources */,
+				BA3A30001A0A165E003E4A85 /* main.m in Sources */,
+				BA3A30251A0A181A003E4A85 /* MainViewController.m in Sources */,
+				BA3A302B1A0A183D003E4A85 /* RightViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BA3A300F1A0A165E003E4A85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BA3A301A1A0A165E003E4A85 /* LYSlideViewControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BA3A30151A0A165E003E4A85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BA3A2FF91A0A165E003E4A85 /* LYSlideViewController */;
+			targetProxy = BA3A30141A0A165E003E4A85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BA3A30071A0A165E003E4A85 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA3A30081A0A165E003E4A85 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BA3A300C1A0A165E003E4A85 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BA3A300D1A0A165E003E4A85 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BA3A301B1A0A165E003E4A85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		BA3A301C1A0A165E003E4A85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BA3A301E1A0A165E003E4A85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LYSlideViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BA3A301F1A0A165E003E4A85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = LYSlideViewController/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BA3A30211A0A165E003E4A85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LYSlideViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LYSlideViewController.app/LYSlideViewController";
+			};
+			name = Debug;
+		};
+		BA3A30221A0A165E003E4A85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = LYSlideViewControllerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LYSlideViewController.app/LYSlideViewController";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BA3A2FF51A0A165E003E4A85 /* Build configuration list for PBXProject "LYSlideViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA3A301B1A0A165E003E4A85 /* Debug */,
+				BA3A301C1A0A165E003E4A85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BA3A301D1A0A165E003E4A85 /* Build configuration list for PBXNativeTarget "LYSlideViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA3A301E1A0A165E003E4A85 /* Debug */,
+				BA3A301F1A0A165E003E4A85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BA3A30201A0A165E003E4A85 /* Build configuration list for PBXNativeTarget "LYSlideViewControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BA3A30211A0A165E003E4A85 /* Debug */,
+				BA3A30221A0A165E003E4A85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BA3A2FF21A0A165E003E4A85 /* Project object */;
+}
