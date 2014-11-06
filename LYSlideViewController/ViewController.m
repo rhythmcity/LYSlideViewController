@@ -122,6 +122,9 @@
     }
     else
     {
+        
+        leftControl.view.transform = CGAffineTransformScale(CGAffineTransformIdentity,1,1);
+        leftControl.view.center = CGPointMake(NomalCenter, [UIScreen mainScreen].bounds.size.height/2);
         rec.view.center = CGPointMake(rec.view.center.x + point.x,rec.view.center.y);
         rec.view.transform = CGAffineTransformScale(CGAffineTransformIdentity,1+scalef/1000,1+scalef/1000);
         [rec setTranslation:CGPointMake(0, 0) inView:self.view];

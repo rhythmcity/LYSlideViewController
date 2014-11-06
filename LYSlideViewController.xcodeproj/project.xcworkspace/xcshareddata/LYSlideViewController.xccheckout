@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>978537CC-9A9D-4DC7-9B54-04D26B271D67</string>
+	<key>IDESourceControlProjectName</key>
+	<string>LYSlideViewController</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>082DDC9339DC1B3A3214423DEDEE67ECFA76555D</key>
+		<string>https://github.com/rhythmcity/LYSlideViewController.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>LYSlideViewController.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>082DDC9339DC1B3A3214423DEDEE67ECFA76555D</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/rhythmcity/LYSlideViewController.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>082DDC9339DC1B3A3214423DEDEE67ECFA76555D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>082DDC9339DC1B3A3214423DEDEE67ECFA76555D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>LYSlideViewController</string>
+		</dict>
+	</array>
+</dict>
+</plist>
