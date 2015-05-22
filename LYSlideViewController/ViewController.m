@@ -12,12 +12,17 @@
 #define MainShowLeftCenter  [UIScreen mainScreen].bounds.size.width*6/5
 #define CriticalValue       [UIScreen mainScreen].bounds.size.width*4/5
 #define AutoSlideValue      [UIScreen mainScreen].bounds.size.width*2/5
+#define SCREENWIDTH         [UIScreen mainScreen].bounds.size.width
+#define PROPORTION          0.8
+#define MAXDISTANCE         0.8
 #import "ViewController.h"
 
 @interface ViewController ()
 {
     
     UIImageView *imageview ;
+    UIScreenEdgePanGestureRecognizer * _screenEdgePan;
+    UIPanGestureRecognizer *_pan;
     
 }
 @end
@@ -41,7 +46,7 @@
              andBackgroundImage:(UIImage *)image;
 {
     if(self){
-       
+   
         
         leftControl = LeftView;
         mainControl = MainView;
@@ -55,9 +60,14 @@
         [self.view addSubview:imageview];
         
         //滑动手势
-        UIPanGestureRecognizer * pan = [[UIPanGestureRecognizer alloc]initWithTarget:self action:@selector(handlePan:)];
-        [mainControl.view addGestureRecognizer:pan];
+        _screenEdgePan = [[UIScreenEdgePanGestureRecognizer alloc]initWithTarget:self action:@selector(handlePan:)];
+        _screenEdgePan.edges = UIRectEdgeLeft;
+        [mainControl.view addGestureRecognizer:_screenEdgePan];
         
+        
+        _pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
+        _pan.enabled  = NO;
+        [mainControl.view addGestureRecognizer:_pan];
         
         //单击手势
         _sideslipTapGes= [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(handeTap:)];
@@ -72,7 +82,6 @@
         self.view.backgroundColor = [UIColor blackColor];
         [self.view addSubview:leftControl.view];
         [self.view addSubview:righControl.view];
-        
         [self.view addSubview:mainControl.view];
         
     }
@@ -88,26 +97,36 @@
     
     CGPoint point = [rec translationInView:self.view];
     
-    //CGPoint speed = [rec velocityInView: self.view];
     scalef = (point.x+scalef);
     
     //根据视图位置判断是左滑还是右边滑动
-    NSLog(@"%f,,,,,%f",scalef,point.x);
     
     if (rec.view.frame.origin.x>=0){
         
         scalef = scalef>CriticalValue?CriticalValue:scalef;
         if (scalef <CriticalValue) {
             
+            CGFloat pro = -scalef/SCREENWIDTH;
+            pro*= 1-PROPORTION;
+            pro/= MAXDISTANCE + PROPORTION/2-0.5;
+            pro += 1;
+            if (pro <= PROPORTION) {
+                return;
+            }
+    
+            rec.view.center = CGPointMake(self.view.center.x + scalef>MainShowLeftCenter?MainShowLeftCenter:self.view.center.x + scalef,rec.view.center.y);
             
-            rec.view.center = CGPointMake(rec.view.center.x + point.x>MainShowLeftCenter?MainShowLeftCenter:rec.view.center.x + point.x,rec.view.center.y);
+            rec.view.transform = CGAffineTransformScale(CGAffineTransformIdentity,pro,pro);
             
-            rec.view.transform = CGAffineTransformScale(CGAffineTransformIdentity,(1-scalef/1280),(1-scalef/1280));
+            
             [rec setTranslation:CGPointMake(0, 0) inView:self.view];
             
-            leftControl.view.transform = CGAffineTransformScale(CGAffineTransformIdentity,0.8+scalef/1280,0.8+scalef/1280);
             
-            leftControl.view.center = CGPointMake(leftControl.view.center.x + point.x>NomalCenter?NomalCenter:leftControl.view.center.x + point.x, [UIScreen mainScreen].bounds.size.height/2);
+            CGFloat leftPro = 1-pro +PROPORTION;
+
+            leftControl.view.transform = CGAffineTransformScale(CGAffineTransformIdentity,leftPro,leftPro);
+            
+            leftControl.view.center = CGPointMake(LeftHiddenCenter + scalef>NomalCenter?NomalCenter:LeftHiddenCenter + scalef, [UIScreen mainScreen].bounds.size.height/2);
             
             righControl.view.hidden = YES;
             leftControl.view.hidden = NO;
@@ -176,6 +195,7 @@
 #pragma mark - 修改视图位置
 //恢复位置
 -(void)showMainView{
+    _pan.enabled = NO;
     [UIView beginAnimations:nil context:nil];
     mainControl.view.transform = CGAffineTransformScale(CGAffineTransformIdentity,1.0,1.0);
     mainControl.view.center = CGPointMake(NomalCenter,[UIScreen mainScreen].bounds.size.height/2);
@@ -186,6 +206,7 @@
 
 //显示左视图
 -(void)showLeftView{
+    _pan.enabled = YES;
     [UIView beginAnimations:nil context:nil];
     mainControl.view.transform = CGAffineTransformScale(CGAffineTransformIdentity,0.8,0.8);
     mainControl.view.center = CGPointMake(MainShowLeftCenter,[UIScreen mainScreen].bounds.size.height/2);

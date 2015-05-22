@@ -361,9 +361,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: yan li (G64LVR936Q)";
 				INFOPLIST_FILE = LYSlideViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c133bed9-6b51-4443-b0d5-179fb7ca7a9f";
 			};
 			name = Debug;
 		};
@@ -371,9 +373,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: yan li (G64LVR936Q)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: yan li (G64LVR936Q)";
 				INFOPLIST_FILE = LYSlideViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "c133bed9-6b51-4443-b0d5-179fb7ca7a9f";
 			};
 			name = Release;
 		};
@@ -430,6 +435,7 @@
 				BA3A301F1A0A165E003E4A85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BA3A30201A0A165E003E4A85 /* Build configuration list for PBXNativeTarget "LYSlideViewControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +444,7 @@
 				BA3A30221A0A165E003E4A85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -16,7 +16,7 @@
     
     UIImageView * imgBackground;
     
-    CGFloat scalef;
+    CGFloat scalef; //实际滑动距离
 
 
 }
